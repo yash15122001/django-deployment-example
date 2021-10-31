@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+  {% load my_extras %}
+  {% block body_block %}
+    <h1>Welcome to index</h1>
+    <h2>This is an example of template inheritance!</h2>
+    <hr>
+    <h1>Filters</h1>
+    <h1>{{ text|cutter:'l' }}</h1>
+    <h1>{{ number|add:'69' }}</h1>
+  {% endblock %}
